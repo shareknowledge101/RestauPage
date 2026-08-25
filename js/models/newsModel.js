@@ -1,95 +1,131 @@
+// ==========================================
+// newsModel.js
+// ==========================================
+
 /**
- * North Africa Atlantic Seafood & Fishing News Module (With Fallback)
+ * Renders the Sea News module layout within the dynamic page.
+ * @param {HTMLElement} container - The content container of the dynamic page.
  */
-
-const NEWS_API_KEY = 'e85eab7d98e848efaf03c85351ff2398';
-
-// Function called by your openDynamicPage('news') controller setup
-async function renderNewsModule() {
-  // Trigger fetch asynchronously right after returning HTML layout
-  setTimeout(fetchSeaNewsArticles, 50);
-
-  return `
-    <div class="order-header-banner">
-      <h2>🌊 North Africa Atlantic Seafood & Fishing News</h2>
-      <p>Live updates on Atlantic catches, fisheries, and coastal maritime news.</p>
-    </div>
-    <div id="sea-news-results-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px 0;">
-      <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #00e5ff;">Loading latest maritime updates...</div>
+export async function renderNewsModule(container) {
+  // 1. Render the initial skeleton layout with loading indicators
+  container.innerHTML = `
+    <div class="news-module">
+      <div class="module-header">
+        <i class="fa-solid fa-newspaper ocean-glow"></i>
+        <h2>Sea News & Maritime Updates</h2>
+      </div>
+      <p class="module-subtitle">Latest headlines from the Atlantic, North Africa, and Morocco ports</p>
+      
+      <div id="news-grid" class="news-grid skeleton-loading">
+        <!-- News cards will be injected here after fetch -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
     </div>
   `;
-}
 
-async function fetchSeaNewsArticles() {
-  const resultsContainer = document.getElementById('sea-news-results-grid');
-  if (!resultsContainer) return;
-
-  const searchQuery = encodeURIComponent('(Atlantic OR "North Africa" OR Morocco) AND (fish OR fishing OR seafood OR port)');
-  const url = `https://newsapi.org/v2/everything?q=${searchQuery}&sortBy=publishedAt&pageSize=6&apiKey=${NEWS_API_KEY}`;
-
+  // 2. Start the asynchronous fetch operation
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-
-    if (data.status === 'ok' && data.articles && data.articles.length > 0) {
-      resultsContainer.innerHTML = data.articles.map(article => buildArticleCard(article)).join('');
-    } else {
-      renderFallbackNews(resultsContainer, "contact us for any wrong news at : group.socialboost@gmail.com");
-    }
+    const articles = await fetchSeaNewsArticles();
+    renderNewsCards(articles);
   } catch (error) {
-    console.warn('NewsAPI fetch blocked or failed. Switching to curated regional fallback data.', error);
-    renderFallbackNews(resultsContainer, "Live feed restricted by browser security. Showing latest North African Atlantic maritime reports:");
+    console.error("News Module rendering failed:", error);
+    renderNewsError(error);
   }
 }
 
-function buildArticleCard(article) {
-  return `
-    <div class="menu-card" style="display: flex; flex-direction: column; justify-content: space-between; background: rgba(59, 117, 146, 0.85); border: 1px solid rgba(0, 229, 255, 0.2); border-radius: 16px; overflow: hidden; padding: 15px;">
-      ${article.urlToImage ? `
-        <div style="width: 100%; height: 160px; border-radius: 12px; overflow: hidden; margin-bottom: 12px; background: #10141d;">
-          <img src="${article.urlToImage}" alt="News Image" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.parentElement.style.display='none'" />
-        </div>
-      ` : ''}
-      <div>
-        <h4 style="margin: 0 0 8px; color: #ffffff; font-size: 1.05rem; line-height: 1.4;">${article.title}</h4>
-        <p style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 15px; line-height: 1.4;">${article.description || 'Read the full report on Atlantic maritime updates.'}</p>
-      </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; margin-top: auto;">
-        <span style="font-size: 0.75rem; opacity: 0.6;">${article.source?.name || 'Maritime News'}</span>
-        <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="add-item-btn" style="text-decoration: none; padding: 6px 12px; font-size: 0.85rem; border-radius: 8px;">Read Article →</a>
-      </div>
-    </div>
-  `;
+/**
+ * Fetches maritime news articles via the Vercel Serverless Function proxy.
+ * This approach keeps the API key secure and bypasses NewsAPI CORS restrictions.
+ * @returns {Promise<Array>} A promise resolving to an array of article objects.
+ */
+async function fetchSeaNewsArticles() {
+  // IMPORTANT: This relative URL calls your serverless function at /api/news.js
+  const proxyUrl = '/api/news'; 
+
+  console.log(`[newsModel] Fetching articles from: ${proxyUrl}...`);
+
+  try {
+    const response = await fetch(proxyUrl);
+
+    if (!response.ok) {
+      // Handle HTTP errors returned by the proxy/serverless function
+      const errorData = await response.json().catch(() => ({}));
+      const errorMessage = errorData.error || `HTTP error ${response.status}`;
+      throw new Error(`[newsModel] Network response was not ok: ${errorMessage}`);
+    }
+
+    const data = await response.json();
+    console.log(`[newsModel] Successfully fetched ${data.articles?.length || 0} articles.`);
+    return data.articles || [];
+
+  } catch (error) {
+    // This catches network errors or issues within the try block
+    console.error(`[newsModel] Fetch operation failed: ${error.message}`);
+    throw error; // Rethrow to let renderNewsModule handle the final UI state
+  }
 }
 
-function renderFallbackNews(container, message) {
-  const fallbackArticles = [
-    {
-      title: "Moroccan Atlantic Fisheries: Sustainable Catch Quotas Announced for the Season",
-      description: "Authorities outline new management measures to protect sardine and cephalopod stocks along the North African coastline.",
-      source: { name: "Fisheries Observer" },
-      url: "https://www.google.com/search?q=Morocco+Atlantic+fisheries+seafood+news",
-      urlToImage: ""
-    },
-    {
-      title: "Martil Coastal Port Updates: Local Artisanal Fleets Report Strong Sea Conditions",
-      description: "Fishermen in the Martil and Tetouan coastal regions experience favorable conditions for seasonal Mediterranean and Atlantic catches.",
-      source: { name: "North Africa Maritime" },
-      url: "https://www.google.com/search?q=Martil+fishing+port+news",
-      urlToImage: ""
-    },
-    {
-      title: "Expanding Seafood Export Markets Across the Atlantic and Mediterranean",
-      description: "How regional logistics hubs are accelerating fresh seafood distribution from North African ports to international markets.",
-      source: { name: "Seafood Trade Today" },
-      url: "https://www.google.com/search?q=Morocco+seafood+export+news",
-      urlToImage: ""
-    }
-  ];
+/**
+ * Injects article data into the news grid UI.
+ * @param {Array} articles - Array of article data from NewsAPI.
+ */
+function renderNewsCards(articles) {
+  const grid = document.getElementById('news-grid');
+  grid.classList.remove('skeleton-loading');
 
-  container.innerHTML = `
-    <div style="grid-column: 1 / -1; background: rgba(0, 229, 255, 0.05); border: 1px dashed rgba(0, 229, 255, 0.3); padding: 10px 15px; border-radius: 10px; font-size: 0.85rem; margin-bottom: 10px; color: #5c601c;">
-      ℹ️ ${message}
+  if (!articles || articles.length === 0) {
+    grid.innerHTML = `
+      <div class="news-no-data">
+        <i class="fa-solid fa-fish-fins ocean-glow"></i>
+        <p>No recent sea news found.</p>
+        <p>Please check back later.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const articlesHtml = articles.map(article => {
+    // Sanitize data (use placeholders for missing images/dates)
+    const imageUrl = article.urlToImage || 'assets/images/ui/news-placeholder.jpg.webp';
+    const publishedDate = article.publishedAt ? new Date(article.publishedAt).toLocaleDateString('en-GB') : 'Unknown Date';
+    const sourceName = article.source?.name || 'Ocean Update';
+    
+    return `
+      <a href="${article.url}" target="_blank" class="news-card ocean-border-glow" rel="noopener noreferrer">
+        <div class="news-card-image">
+          <img src="${imageUrl}" alt="Thumbnail for ${article.title}" loading="lazy">
+        </div>
+        <div class="news-card-body">
+          <span class="news-source">${sourceName}</span>
+          <h3 class="news-title">${article.title}</h3>
+          <p class="news-description">${article.description || ''}</p>
+          <div class="news-footer">
+            <span class="news-date"><i class="fa-regular fa-calendar"></i> ${publishedDate}</span>
+            <span class="news-read-more">Read Full Article <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </a>
+    `;
+  }).join('');
+
+  grid.innerHTML = articlesHtml;
+}
+
+/**
+ * Renders an error message state within the news grid.
+ * @param {Error} error - The error object.
+ */
+function renderNewsError(error) {
+  const grid = document.getElementById('news-grid');
+  grid.classList.remove('skeleton-loading');
+  grid.innerHTML = `
+    <div class="news-error-state">
+      <i class="fa-solid fa-triangle-exclamation ocean-glow"></i>
+      <p><strong>Failed to load Sea News.</strong></p>
+      <p class="error-details">${error.message}</p>
+      <p>This may happen if the news service is temporarily unavailable.</p>
     </div>
-  ` + fallbackArticles.map(article => buildArticleCard(article)).join('');
+  `;
 }
