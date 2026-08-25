@@ -1,0 +1,4 @@
+/* page-about.css initialized */
+.about-container { line-height: 1.8; color: var(--text-muted); }
+.about-container h2 { color: var(--text-main); margin-bottom: 15px; }
+.heritage-box { background: var(--glass); border-left: 4px solid var(--accent); padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; }

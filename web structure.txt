@@ -1,0 +1,30 @@
+friends-restaurant/
+│
+├── index.html                  # Core single-page shell (Hero, Modals, Loader, Navigation)
+│
+├── css/
+│   ├── main.css                # Base reset, layout grid, dark/light theme variables
+│   ├── loader.css              # Swimming fish preloader animation
+│   ├── cursor.css              # Mouse-following spotlight & glow effect
+│   ├── lighthouse-toggle.css   # Turned off/on lighthouse dark mode switch
+│   ├── drawer.css              # Left-side hamburger slide-out navigation
+│   ├── modal.css               # Dynamic overlay popups
+│   ├── page-order.css          # Food ordering modal layout
+│   ├── page-about.css          # About Us story layout
+│   ├── page-news.css           # Fresh sea news layout
+│   └── page-weather.css        # Tanger-Tétouan-Martil static regional weather UI
+│
+├── js/
+│   ├── app.js                  # Main controller, cursor movement, navigation router
+│   ├── loader.js               # Swimming fish loader hide/show timing
+│   ├── lighthouse.js           # Light/Dark mode state switch
+│   ├── weather.js              # Localized weather data renderer
+│   └── models/
+│       ├── orderModel.js       # Dish catalog & cart logic
+│       ├── newsModel.js        # Fresh fish catches & sea updates data
+│       ├── aboutModel.js       # Restaurant history & heritage data
+│       └── weatherModel.html   # Static weather layout markup snippet
+│
+└── assets/
+    ├── icons/                  # SVG icons (hamburger, close, light, dark, fish)
+    └── images/                 # Restaurant media and dish photos

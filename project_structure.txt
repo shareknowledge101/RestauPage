@@ -1,0 +1,212 @@
+
+📁 Project Structure: restaurant friends démo/
+│
+    ├── assets
+│   │   ├── icons
+│   │   │   ├── facebook-logo-1.webp
+│   │   │   ├── Facebook-logo-2.png
+│   │   │   ├── instagram-logo-1.jpg
+│   │   │   ├── Instagram-Logo-2.png
+│   │   │   ├── instagram-logo-3.png
+│   │   │   ├── instagram-logo-4.png
+│   │   │   └── Map-logo-1.jpg
+│   │   ├── images
+│   │   │   ├── background.jpg
+│   │   │   ├── logo-2.jpeg
+│   │   │   ├── logo.jpeg
+│   │   │   └── store.jpeg
+│   │   └── orders
+│           ├── menu
+│       │   │   ├── Cazuela
+│       │   │   │   ├── tajine_friends.jpg
+│       │   │   │   ├── tajine_mixte.jpg
+│       │   │   │   ├── tajine_pilpil.jpg
+│       │   │   │   └── tajine_royal.jpg
+│       │   │   ├── Couscous
+│       │   │   │   ├── couscous_poulet_lben.jpg
+│       │   │   │   └── couscous_viande_lben.jpg
+│       │   │   ├── Dessert
+│       │   │   │   ├── cuajada.jpg
+│       │   │   │   ├── flan.jpg
+│       │   │   │   ├── flan_royal.jpg
+│       │   │   │   ├── flan_uf.jpg
+│       │   │   │   ├── m_hallabiya.jpg
+│       │   │   │   ├── natillas.jpg
+│       │   │   │   ├── salade_fruits.jpg
+│       │   │   │   ├── tarte_citron.jpg
+│       │   │   │   ├── tarte_oreo.jpg
+│       │   │   │   └── tiramisu.jpg
+│       │   │   ├── Entrées
+│       │   │   │   ├── almijas.png
+│       │   │   │   ├── concha.png
+│       │   │   │   ├── coquinas.png
+│       │   │   │   ├── croquette_poisson.png
+│       │   │   │   ├── mejiyounis.png
+│       │   │   │   ├── paella.png
+│       │   │   │   ├── soupe_chinoise.png
+│       │   │   │   ├── soupe_de_poisson.png
+│       │   │   │   └── soupe_de_poisson_royale.png
+│       │   │   ├── Filets de Poisson
+│       │   │   │   ├── badijo.jpg
+│       │   │   │   ├── dorade.jpg
+│       │   │   │   ├── espadon.jpg
+│       │   │   │   ├── lotte.jpg
+│       │   │   │   ├── merou.jpg
+│       │   │   │   ├── saint_pierre.jpg
+│       │   │   │   ├── saumon.jpg
+│       │   │   │   ├── sol.jpg
+│       │   │   │   ├── thon_rouge.jpg
+│       │   │   │   └── turbot.jpg
+│       │   │   ├── Fritures de Poisson
+│       │   │   │   ├── friture_de_poisson.jpg
+│       │   │   │   ├── friture_royal.jpg
+│       │   │   │   └── grillade_de_poisson.jpg
+│       │   │   ├── Fritures Royale
+│       │   │   │   ├── crevettes_royal.jpg
+│       │   │   │   ├── gambas.jpg
+│       │   │   │   ├── homard.jpg
+│       │   │   │   ├── langosta.jpg
+│       │   │   │   ├── langostino.jpg
+│       │   │   │   └── sigala.jpg
+│       │   │   ├── Jus & Boissons
+│       │   │   │   ├── bio.jpg
+│       │   │   │   ├── boissons_gazeuses.jpg
+│       │   │   │   ├── eau_minerale_grand.jpg
+│       │   │   │   ├── eau_minerale_moyen.jpg
+│       │   │   │   ├── jus_d_ananas.jpg
+│       │   │   │   ├── jus_d_avocat.jpg
+│       │   │   │   ├── jus_d_orange.jpg
+│       │   │   │   ├── jus_de_banane.jpg
+│       │   │   │   ├── jus_de_mangue.jpg
+│       │   │   │   ├── jus_de_pomme.jpg
+│       │   │   │   ├── jus_fraise.jpg
+│       │   │   │   ├── jus_panache.jpg
+│       │   │   │   ├── oulmes.jpg
+│       │   │   │   ├── zaazaa_friends.jpg
+│       │   │   │   └── zaazaa_fruits_secs.jpg
+│       │   │   ├── Pastas
+│       │   │   │   ├── lasagne_bolonaise.jpg
+│       │   │   │   ├── lasagne_fruits_de_mer.jpg
+│       │   │   │   ├── lasagne_poulet.jpg
+│       │   │   │   ├── spaghetti_bolonaise.jpg
+│       │   │   │   ├── spaghetti_fruits_de_mer.jpg
+│       │   │   │   ├── spaghetti_poulet.jpg
+│       │   │   │   ├── tagliatelle_bolonaise.jpg
+│       │   │   │   ├── tagliatelle_fruits_de_mer.jpg
+│       │   │   │   └── tagliatelle_poulet.jpg
+│       │   │   ├── Pasticcio
+│       │   │   │   ├── pasticcio_dinde_fumee.jpg
+│       │   │   │   ├── pasticcio_fruits_de_mer.jpg
+│       │   │   │   ├── pasticcio_mixte.jpg
+│       │   │   │   ├── pasticcio_poulet.jpg
+│       │   │   │   ├── pasticcio_vegetarien.jpg
+│       │   │   │   └── pasticcio_viande_hachee.jpg
+│       │   │   ├── Poisson au Kg
+│       │   │   │   ├── badijo.jpg
+│       │   │   │   ├── borassi.jpg
+│       │   │   │   ├── dorade.jpg
+│       │   │   │   ├── loup_lobina.jpg
+│       │   │   │   ├── miro.jpg
+│       │   │   │   ├── pagou_royal.jpg
+│       │   │   │   ├── pargo_boubrados.jpg
+│       │   │   │   ├── saint_pierre.jpg
+│       │   │   │   ├── sol_lenguado.jpg
+│       │   │   │   └── turbot.jpg
+│       │   │   ├── Poulet (Frites + Sauce + Riz)
+│       │   │   │   ├── demi_poulet.jpg
+│       │   │   │   ├── poulet_entier.jpg
+│       │   │   │   └── quart_de_poulet.jpg
+│       │   │   ├── Racion de Poisson
+│       │   │   │   ├── brochettes_espadon.jpg
+│       │   │   │   ├── brochettes_lotte.jpg
+│       │   │   │   ├── calamar.jpg
+│       │   │   │   ├── crevettes.jpg
+│       │   │   │   ├── merlan.jpg
+│       │   │   │   ├── puntillas.jpg
+│       │   │   │   ├── rouget.jpg
+│       │   │   │   └── sol.jpg
+│       │   │   ├── Raciones
+│       │   │   │   ├── assiette_chicken_crispe.jpg
+│       │   │   │   ├── assiette_cordon_bleu.jpg
+│       │   │   │   ├── assiette_cuisse_poulet_pane.jpg
+│       │   │   │   ├── assiette_de_dinde.jpg
+│       │   │   │   ├── assiette_de_poulet.jpg
+│       │   │   │   ├── assiette_emince_poulet.jpg
+│       │   │   │   ├── assiette_foie_de_buf.jpg
+│       │   │   │   ├── assiette_mixte.jpg
+│       │   │   │   ├── assiette_nugettes.jpg
+│       │   │   │   ├── assiette_saucisse.jpg
+│       │   │   │   ├── assiette_tortella.jpg
+│       │   │   │   └── assiette_viande_hachee.jpg
+│       │   │   ├── Salades
+│       │   │   │   ├── salade_avocat_crevettes.jpg
+│       │   │   │   ├── salade_cesar.jpg
+│       │   │   │   ├── salade_friends.jpg
+│       │   │   │   ├── salade_fruits_de_mer.jpg
+│       │   │   │   ├── salade_marocaine.jpg
+│       │   │   │   ├── salade_nicoise.jpg
+│       │   │   │   ├── salade_polpos.jpg
+│       │   │   │   ├── salade_rossa.jpg
+│       │   │   │   ├── salade_salamoun.jpg
+│       │   │   │   └── salade_tropicale.jpg
+│       │   │   ├── Tajine (+ Frites)
+│       │   │   │   ├── tajine_de_chevre.jpg
+│       │   │   │   ├── tajine_foie_de_buf.jpg
+│       │   │   │   ├── tajine_foie_de_dinde.jpg
+│       │   │   │   ├── tajine_poulet.jpg
+│       │   │   │   ├── tajine_poulet_aux_legumes.jpg
+│       │   │   │   ├── tajine_viande_aux_legumes.jpg
+│       │   │   │   ├── tajine_viande_aux_pruneaux.jpg
+│       │   │   │   └── tajine_viande_hachee.jpg
+│       │   │   ├── file_list.txt
+│       │   │   ├── findir.py
+│       │   │   └── renamer.py
+│           ├── cazuela.png.jpg
+│           ├── couscous.png
+│           ├── desert.png
+│           ├── entree.png.jpg
+│           ├── filet_de_poisson.png.jpg
+│           ├── friture_de_poisson.png.jpg
+│           ├── friture_royal.png.jpg
+│           ├── jus_&_boisson.png
+│           ├── pastas.png
+│           ├── pasticcio.png
+│           ├── poisson_au_kg.png
+│           ├── poulet.png
+│           ├── racion_de_poisson.png.jpg
+│           ├── raciones.png
+│           ├── salades.png.jpg
+│           └── tajine.png
+    ├── css
+│   │   ├── cursor.css
+│   │   ├── drawer-sea.css
+│   │   ├── drawer.css
+│   │   ├── lighthouse-toggle.css
+│   │   ├── loader.css
+│   │   ├── main.css
+│   │   ├── modal.css
+│   │   ├── page-about.css
+│   │   ├── page-news.css
+│   │   ├── page-order.css
+│   │   ├── page-weather.css
+│   │   └── waves_background.css
+    ├── js
+│   │   ├── models
+│   │   │   ├── aboutModel.js
+│   │   │   ├── newsModel.js
+│   │   │   ├── orderModel.js
+│   │   │   └── weatherModel.html
+│   │   ├── app.js
+│   │   ├── lighthouse.js
+│   │   ├── loader.js
+│   │   └── weather.js
+    ├── scripts
+    ├── styles
+│   │   └── style.css
+    ├── index.html
+    ├── Restaurant-DIRMaker.py
+    ├── restaurant_data.json
+    ├── treemaker.py
+    └── web structure.txt
+
+📊 Summary: 26 folders, 181 files

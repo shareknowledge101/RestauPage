@@ -1,0 +1,132 @@
+Scanning directory: c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu
+Total files found: 128
+============================================================
+
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\file_list.txt
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\findir.py
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\renamer.py
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Cazuela\tajine_friends.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Cazuela\tajine_mixte.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Cazuela\tajine_pilpil.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Cazuela\tajine_royal.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Couscous\couscous_poulet_lben.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Couscous\couscous_viande_lben.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\cuajada.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\flan.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\flan_royal.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\flan_uf.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\m_hallabiya.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\natillas.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\salade_fruits.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\tarte_citron.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\tarte_oreo.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Dessert\tiramisu.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\almijas.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\concha.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\coquinas.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\croquette_poisson.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\mejiyounis.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\paella.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\soupe_chinoise.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\soupe_de_poisson.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Entrées\soupe_de_poisson_royale.png
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\badijo.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\dorade.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\espadon.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\lotte.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\merou.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\saint_pierre.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\saumon.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\sol.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\thon_rouge.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Filets de Poisson\turbot.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures de Poisson\friture_de_poisson.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures de Poisson\friture_royal.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures de Poisson\grillade_de_poisson.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures Royale\crevettes_royal.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures Royale\gambas.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures Royale\homard.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures Royale\langosta.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures Royale\langostino.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Fritures Royale\sigala.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\bio.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\boissons_gazeuses.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\eau_minerale_grand.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\eau_minerale_moyen.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_de_banane.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_de_mangue.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_de_pomme.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_d_ananas.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_d_avocat.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_d_orange.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_fraise.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\jus_panache.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\oulmes.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\zaazaa_friends.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Jus & Boissons\zaazaa_fruits_secs.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\lasagne_bolonaise.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\lasagne_fruits_de_mer.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\lasagne_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\spaghetti_bolonaise.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\spaghetti_fruits_de_mer.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\spaghetti_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\tagliatelle_bolonaise.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\tagliatelle_fruits_de_mer.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pastas\tagliatelle_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pasticcio\pasticcio_dinde_fumee.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pasticcio\pasticcio_fruits_de_mer.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pasticcio\pasticcio_mixte.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pasticcio\pasticcio_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pasticcio\pasticcio_vegetarien.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Pasticcio\pasticcio_viande_hachee.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\badijo.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\borassi.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\dorade.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\loup_lobina.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\miro.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\pagou_royal.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\pargo_boubrados.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\saint_pierre.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\sol_lenguado.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poisson au Kg\turbot.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poulet (Frites + Sauce + Riz)\demi_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poulet (Frites + Sauce + Riz)\poulet_entier.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Poulet (Frites + Sauce + Riz)\quart_de_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\brochettes_espadon.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\brochettes_lotte.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\calamar.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\crevettes.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\merlan.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\puntillas.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\rouget.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Racion de Poisson\sol.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_chicken_crispe.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_cordon_bleu.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_cuisse_poulet_pane.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_de_dinde.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_de_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_emince_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_foie_de_buf.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_mixte.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_nugettes.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_saucisse.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_tortella.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Raciones\assiette_viande_hachee.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_avocat_crevettes.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_cesar.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_friends.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_fruits_de_mer.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_marocaine.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_nicoise.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_polpos.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_rossa.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_salamoun.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Salades\salade_tropicale.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_de_chevre.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_foie_de_buf.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_foie_de_dinde.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_poulet.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_poulet_aux_legumes.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_viande_aux_legumes.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_viande_aux_pruneaux.jpg
+c:\Users\Senior Amine\Desktop\Projects\restaurant friends démo\assets\orders\menu\Tajine (+ Frites)\tajine_viande_hachee.jpg

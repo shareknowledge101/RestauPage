@@ -1,0 +1,5 @@
+/* page-news.css initialized */
+.news-list { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.news-item { background: var(--bg-card); border: 1px solid var(--border); padding: 18px; border-radius: 12px; }
+.news-item span { font-size: 0.8rem; color: var(--accent); }
+.news-item h4 { margin: 5px 0; color: var(--text-main); }

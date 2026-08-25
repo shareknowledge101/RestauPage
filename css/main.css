@@ -1,0 +1,335 @@
+:root {
+  --bg-primary: #080d1a;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f0f4f8;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent: #0284c7;
+  --accent-glow: rgba(2, 132, 199, 0.15);
+  --border: rgba(0, 0, 0, 0.1);
+  --glass: rgba(0, 0, 0, 0.02);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+body { background: var(--bg-primary); color: var(--text-main); min-height: 100vh; overflow-x: hidden; transition: background 0.4s ease; }
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-logo { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; }
+.brand-logo span { color: var(--accent); }
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.badge {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  color: var(--accent);
+  display: inline-block;
+}
+
+.cta-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Header Social & Location Bar */
+.header-social-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.social-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icon-btn:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Hero Action Buttons */
+.hero-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.cta-btn.primary {
+  padding: 16px 36px;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.cta-btn.secondary {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta-btn.secondary:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Hero Social Pills */
+.hero-social-pills {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pill-link {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: 0.2s ease;
+}
+
+.pill-link:hover {
+  color: var(--text-main);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* Drawer Footer Socials */
+.drawer-footer-socials {
+  margin-top: auto;
+  padding-top: 25px;
+  border-top: 1px solid var(--border);
+}
+
+.drawer-social-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.drawer-social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.drawer-social-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.drawer-social-link:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Logo Styling & Blend Mode Adjustments */
+.brand-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s ease;
+}
+
+.brand-logo-img:hover {
+  transform: scale(1.04);
+}
+
+.hero-logo-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 20px rgba(56, 189, 248, 0.25));
+}
+
+.drawer-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+[data-theme="dark"] .brand-logo-img,
+[data-theme="dark"] .hero-logo-img,
+[data-theme="dark"] .drawer-logo-img {
+  mix-blend-mode: lighten;
+}
+
+[data-theme="light"] .brand-logo-img,
+[data-theme="light"] .hero-logo-img,
+[data-theme="light"] .drawer-logo-img {
+  mix-blend-mode: multiply;
+}
+
+/* Responsive Media Queries (Tablets and Phones) */
+@media screen and (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-header {
+    padding: 0 15px;
+    height: 65px;
+  }
+
+  .header-social-actions {
+    gap: 6px;
+    margin-right: 8px;
+  }
+
+  .social-icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .social-icon-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-logo-img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-social-actions .facebook-btn {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .cta-btn.primary {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}

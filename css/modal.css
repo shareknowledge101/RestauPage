@@ -1,0 +1,18 @@
+/* modal.css */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+  z-index: 2000; display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: 0.3s ease;
+}
+
+.modal-overlay.visible { opacity: 1; pointer-events: auto; }
+
+.modal-overlay.hidden {
+  display: none !important;
+}
+
+.modal-window {
+  width: 90%; max-width: 900px; max-height: 85vh; background: var(--bg-primary); border: 1px solid var(--border);
+  border-radius: 20px; padding: 35px; position: relative; overflow-y: auto;
+}
+
+.modal-close { position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.8rem; color: var(--text-main); cursor: pointer; }

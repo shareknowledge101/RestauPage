@@ -1,0 +1,33 @@
+{
+  "restaurant": {
+    "name": "Friends Restaurant du Poisson",
+    "location": "Tangier - Tétouan - Martil, Morocco",
+    "specialty": "Mediterranean Fresh Seafood & Moroccan Tagines"
+  },
+  "weather_static": {
+    "tangier": {
+      "city": "Tangier (Strait & Port)",
+      "wind_speed": "22 km/h WNW",
+      "high_c": "28°C",
+      "low_c": "20°C",
+      "sunrise": "06:48 AM",
+      "sunset": "20:02 PM"
+    },
+    "tetouan": {
+      "city": "Tétouan",
+      "wind_speed": "17 km/h ENE",
+      "high_c": "30°C",
+      "low_c": "21°C",
+      "sunrise": "06:46 AM",
+      "sunset": "20:00 PM"
+    },
+    "martil": {
+      "city": "Martil Beachfront",
+      "wind_speed": "15 km/h E",
+      "high_c": "29°C",
+      "low_c": "21°C",
+      "sunrise": "06:46 AM",
+      "sunset": "19:59 PM"
+    }
+  }
+}

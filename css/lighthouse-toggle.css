@@ -1,0 +1,46 @@
+.lighthouse-toggle {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 101;
+  pointer-events: auto;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.lighthouse-tower {
+  width: 12px;
+  height: 20px;
+  background: var(--text-muted);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+  pointer-events: none;
+}
+
+.lighthouse-beam {
+  position: absolute;
+  top: 12px;
+  right: -8px;
+  width: 28px;
+  height: 14px;
+  background: linear-gradient(90deg, #f59e0b, transparent);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+[data-theme="light"] .lighthouse-beam {
+  opacity: 1;
+}
+
+[data-theme="light"] .lighthouse-tower {
+  background: #f59e0b;
+}
