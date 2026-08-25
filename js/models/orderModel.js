@@ -151,7 +151,7 @@ const menuData = [
   },
   {
     category: "Poulet (Frites + Sauce + Riz)",
-    iconImg: "assets/orders/Poulet.png",
+    iconImg: "assets/orders/poulet.png",
     items: [
       { id: "p1", name: "Quart de Poulet", price: 30, desc: "Quarter roasted chicken served with fries, sauce, and rice.", image: "assets/orders/menu/Poulet (Frites + Sauce + Riz)/quart_de_poulet.jpg" },
       { id: "p2", name: "Demi-Poulet", price: 50, desc: "Half roasted chicken served with fries, sauce, and rice.", image: "assets/orders/menu/Poulet (Frites + Sauce + Riz)/demi_poulet.jpg" },
