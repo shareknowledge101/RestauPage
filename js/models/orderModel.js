@@ -94,7 +94,7 @@ const menuData = [
   },
   {
     category: "Salades",
-    iconImg: "assets/orders/Salades.png.jpg",
+    iconImg: "assets/orders/salades.png.jpg",
     items: [
       { id: "s1", name: "Salade Marocaine", variants: [{ name: "Grand", price: 30 }, { name: "Petit", price: 20 }], desc: "Diced tomatoes, cucumbers, onion, and herbs.", image: "assets/orders/menu/Salades/salade_marocaine.jpg" },
       { id: "s2", name: "Salade Niçoise", variants: [{ name: "Grand", price: 35 }, { name: "Petit", price: 25 }], desc: "Tuna, boiled eggs, olives, and fresh greens.", image: "assets/orders/menu/Salades/salade_nicoise.jpg" },
