@@ -106,7 +106,6 @@ export async function openDynamicPage(moduleName) {
   // Route Module Loading
   switch (moduleName) {
     case 'news':
-      // Render News Module from newsModel.js
       await renderNewsModule(appContainer);
       break;
 
@@ -143,7 +142,9 @@ export async function openDynamicPage(moduleName) {
  * @param {HTMLElement} container 
  */
 function renderOrderMenuModule(container) {
-  if (typeof menuCategories === 'undefined') {
+  const categories = window.menuCategories;
+
+  if (!categories || !Array.isArray(categories)) {
     container.innerHTML = `
       <div class="order-module-error">
         <h2>Menu items currently unavailable.</h2>
@@ -153,7 +154,7 @@ function renderOrderMenuModule(container) {
     return;
   }
 
-  let categoriesHtml = menuCategories.map((cat, index) => `
+  let categoriesHtml = categories.map((cat, index) => `
     <button class="category-chip ${index === 0 ? 'active' : ''}" data-category-id="${cat.id}">
       <span>${cat.icon}</span> ${cat.name}
     </button>
@@ -183,8 +184,8 @@ function renderOrderMenuModule(container) {
   });
 
   // Render First Category by default
-  if (menuCategories.length > 0) {
-    renderCategoryItems(menuCategories[0].id);
+  if (categories.length > 0) {
+    renderCategoryItems(categories[0].id);
   }
 }
 
@@ -194,9 +195,10 @@ function renderOrderMenuModule(container) {
  */
 function renderCategoryItems(categoryId) {
   const grid = document.getElementById('menu-items-grid');
-  if (!grid || typeof menuCategories === 'undefined') return;
+  const categories = window.menuCategories;
+  if (!grid || !categories) return;
 
-  const category = menuCategories.find(c => c.id === categoryId);
+  const category = categories.find(c => c.id === categoryId);
   if (!category || !category.items) {
     grid.innerHTML = `<p>No items found in this section.</p>`;
     return;
@@ -235,8 +237,12 @@ function renderCategoryItems(categoryId) {
  * Cart Management System
  */
 function addToCart(categoryId, itemId) {
-  const category = menuCategories.find(c => c.id === categoryId);
+  const categories = window.menuCategories;
+  if (!categories) return;
+
+  const category = categories.find(c => c.id === categoryId);
   if (!category) return;
+
   const item = category.items.find(i => i.id === itemId);
   if (!item) return;
 
@@ -281,13 +287,11 @@ function updateCartBar() {
  * Global Event Listeners & Modals
  */
 function setupGlobalEvents() {
-  // Cart Checkout Action Button
   const checkoutBtn = document.getElementById('cart-checkout-btn');
   if (checkoutBtn) {
     checkoutBtn.addEventListener('click', handleWhatsAppCheckout);
   }
 
-  // Modal Close Actions
   const modalCloseBtn = document.getElementById('modal-close-btn');
   const orderSuccessModal = document.getElementById('order-success-modal');
   if (modalCloseBtn && orderSuccessModal) {
@@ -319,14 +323,12 @@ function handleWhatsAppCheckout() {
   const encodedMessage = encodeURIComponent(message);
   const waUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
 
-  // Reset Cart and Trigger Success Modal
   state.cart = [];
   updateCartBar();
 
   const successModal = document.getElementById('order-success-modal');
   if (successModal) successModal.classList.remove('hidden');
 
-  // Open WhatsApp in new tab
   window.open(waUrl, '_blank');
 }
 
@@ -342,9 +344,6 @@ function initMouseFollower() {
   });
 }
 
-/**
- * Fallback Renderers for Missing External Scripts
- */
 function renderFallbackAbout(container) {
   container.innerHTML = `
     <div class="page-about-wrapper">
@@ -363,9 +362,6 @@ function renderFallbackWeather(container) {
   `;
 }
 
-/**
- * Global Phone Dropdown Handler for Header Action
- */
 window.togglePhoneDropdown = function(event) {
   if (event) event.stopPropagation();
   const dropdownMenu = document.getElementById('phone-dropdown-menu');
@@ -375,7 +371,6 @@ window.togglePhoneDropdown = function(event) {
   }
 };
 
-// Close Dropdown when clicking outside
 document.addEventListener('click', () => {
   const dropdownMenu = document.getElementById('phone-dropdown-menu');
   if (dropdownMenu) {
