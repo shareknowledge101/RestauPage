@@ -1,10 +1,12 @@
 /**
  * Restaurant Friends - Application Controller
  */
+import { renderNewsModule } from './models/newsModel.js';
 
 // Cart & Navigation State
 let shoppingCart = [];
 let activeCategoryIndex = null;
+
 
 // DOM Elements
 const heroSection = document.getElementById('hero-section');
@@ -98,9 +100,10 @@ async function openDynamicPage(moduleName) {
       } else {
         moduleContainer.innerHTML = `<div class="order-header-banner"><h2>🌤️ Martil Sea Weather</h2><p>Live coastal conditions and fishing forecasts.</p></div>`;
       }
+    // Inside openDynamicPage(moduleName) in js/app.js
     } else if (moduleName === 'news') {
       if (typeof renderNewsModule === 'function') {
-        moduleContainer.innerHTML = await renderNewsModule();
+        await renderNewsModule(moduleContainer);
       } else if (typeof getNewsHTML === 'function') {
         moduleContainer.innerHTML = getNewsHTML();
       } else {

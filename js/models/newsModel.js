@@ -1,11 +1,4 @@
-// ==========================================
-// newsModel.js
-// ==========================================
 
-/**
- * Renders the Sea News module layout within the dynamic page.
- * @param {HTMLElement} container - The content container of the dynamic page.
- */
 export async function renderNewsModule(container) {
   // 1. Render the initial skeleton layout with loading indicators
   container.innerHTML = `
